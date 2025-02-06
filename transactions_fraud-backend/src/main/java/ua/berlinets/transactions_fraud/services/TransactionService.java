@@ -25,7 +25,7 @@ public class TransactionService {
     private final Deque<FraudAlert> lastFraudAlerts = new LinkedList<>();
     private final ModelMapper modelMapper;
     private static final int MAX_HISTORY = 15;
-    private static final long WINDOW_SIZE_MS = 10 * 60 * 1000;
+    private static final long WINDOW_SIZE_MS = 3 * 60 * 1000;
 
     public void recordTransaction(Transaction transaction) {
         long windowStart = getWindowStart(transaction.getTimestamp().toEpochMilli());
@@ -51,6 +51,7 @@ public class TransactionService {
             if (stats == null) {
                 stats = new TimeWindowStats(windowStart);
             }
+            stats.incrementTotal();
             stats.incrementBlocked();
             stats.decrementApproved();
             return stats;
