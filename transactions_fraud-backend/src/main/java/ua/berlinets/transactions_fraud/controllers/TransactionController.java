@@ -23,6 +23,14 @@ public class TransactionController {
         return ResponseEntity.ok("Transaction sent!");
     }
 
+    @PostMapping("/send-list")
+    public ResponseEntity<?> sendTransactionList(@RequestBody Transaction[] transactions) {
+        for (Transaction transaction : transactions) {
+            transactionProducer.sendTransaction(transaction);
+        }
+        return ResponseEntity.ok("Transactions sent!");
+    }
+
     @GetMapping("/statistics")
     public ResponseEntity<?> getStatistics() {
         return ResponseEntity.ok(transactionService.getStatistics());

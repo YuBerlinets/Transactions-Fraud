@@ -10,4 +10,5 @@ public class FraudAlertListDTO {
     private String userId;
     private String transactionId;
     private Instant timestamp;
+    private String amount;
 }
