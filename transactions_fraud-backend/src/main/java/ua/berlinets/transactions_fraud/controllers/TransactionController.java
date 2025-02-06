@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ua.berlinets.transactions_fraud.dto.transactions.Transaction;
 import ua.berlinets.transactions_fraud.services.ExternalService;
+import ua.berlinets.transactions_fraud.services.TransactionService;
 import ua.berlinets.transactions_fraud.services.kafka.TransactionProducer;
 
 @RestController
@@ -13,6 +14,7 @@ import ua.berlinets.transactions_fraud.services.kafka.TransactionProducer;
 public class TransactionController {
 
     private final TransactionProducer transactionProducer;
+    private final TransactionService transactionService;
     private final ExternalService externalService;
 
     @PostMapping("/send")
@@ -21,5 +23,9 @@ public class TransactionController {
         return ResponseEntity.ok("Transaction sent!");
     }
 
+    @GetMapping("/statistics")
+    public ResponseEntity<?> getStatistics() {
+        return ResponseEntity.ok(transactionService.getStatistics());
+    }
 }
 

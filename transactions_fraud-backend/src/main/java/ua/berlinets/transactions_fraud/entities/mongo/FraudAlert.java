@@ -19,8 +19,8 @@ public class FraudAlert {
     @Id
     private String id;
     private String userId;
+    private String transactionId;
     private double amount;
     private Instant timestamp;
     private String location;
-    private Set<String> locations;
 }

@@ -11,6 +11,7 @@ import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 import org.springframework.kafka.listener.ConcurrentMessageListenerContainer;
 import org.springframework.kafka.support.mapping.DefaultJackson2JavaTypeMapper;
 import org.springframework.kafka.support.serializer.JsonDeserializer;
+import ua.berlinets.transactions_fraud.dto.transactions.Transaction;
 import ua.berlinets.transactions_fraud.entities.mongo.FraudAlert;
 
 import java.util.HashMap;
@@ -29,32 +30,64 @@ public class KafkaConsumerConfig {
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:29092");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
-        props.put(ConsumerConfig.GROUP_ID_CONFIG, "fraud-alerts");
         return props;
     }
 
-
     @Bean
-    public DefaultKafkaConsumerFactory<String, FraudAlert> consumerFactory() {
-        return new DefaultKafkaConsumerFactory<>(consumerConfigs(), new StringDeserializer(), fraudAlertDeserializer());
+    public ConsumerFactory<String, FraudAlert> fraudAlertConsumerFactory() {
+        return new DefaultKafkaConsumerFactory<>(
+                consumerConfigs(),
+                new StringDeserializer(),
+                fraudAlertDeserializer()
+        );
     }
 
     @Bean
-    public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, FraudAlert>> kafkaListenerContainerFactory(
-            ConsumerFactory<String, FraudAlert> consumerFactory) {
-        ConcurrentKafkaListenerContainerFactory<String, FraudAlert> listenerContainerFactory =
+    public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, FraudAlert>>
+    fraudAlertContainerFactory() {
+        ConcurrentKafkaListenerContainerFactory<String, FraudAlert> factory =
                 new ConcurrentKafkaListenerContainerFactory<>();
-        listenerContainerFactory.setConsumerFactory(consumerFactory);
-        return listenerContainerFactory;
+        factory.setConsumerFactory(fraudAlertConsumerFactory());
+        return factory;
     }
 
     @Bean
     public JsonDeserializer<FraudAlert> fraudAlertDeserializer() {
         JsonDeserializer<FraudAlert> deserializer = new JsonDeserializer<>(FraudAlert.class);
+        configureDeserializer(deserializer);
+        return deserializer;
+    }
+
+
+    @Bean
+    public ConsumerFactory<String, Transaction> transactionConsumerFactory() {
+        return new DefaultKafkaConsumerFactory<>(
+                consumerConfigs(),
+                new StringDeserializer(),
+                transactionDeserializer()
+        );
+    }
+
+    @Bean
+    public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, Transaction>>
+    transactionContainerFactory() {
+        ConcurrentKafkaListenerContainerFactory<String, Transaction> factory =
+                new ConcurrentKafkaListenerContainerFactory<>();
+        factory.setConsumerFactory(transactionConsumerFactory());
+        return factory;
+    }
+
+    @Bean
+    public JsonDeserializer<Transaction> transactionDeserializer() {
+        JsonDeserializer<Transaction> deserializer = new JsonDeserializer<>(Transaction.class);
+        configureDeserializer(deserializer);
+        return deserializer;
+    }
+
+    private void configureDeserializer(JsonDeserializer<?> deserializer) {
         deserializer.addTrustedPackages("*");
         deserializer.setTypeMapper(new DefaultJackson2JavaTypeMapper());
         deserializer.getTypeMapper().addTrustedPackages("*");
         deserializer.setRemoveTypeHeaders(false);
-        return deserializer;
     }
 }

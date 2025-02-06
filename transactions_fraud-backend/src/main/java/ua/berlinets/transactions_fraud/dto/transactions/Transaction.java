@@ -16,5 +16,6 @@ public class Transaction implements Serializable {
     private String merchant;
     private String type;
     private String location;
+    private boolean isFraud;
     private List<PreviousTransaction> previousTransactions;
 }

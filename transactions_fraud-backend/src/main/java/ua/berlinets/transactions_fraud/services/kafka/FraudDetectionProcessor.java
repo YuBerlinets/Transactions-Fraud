@@ -89,22 +89,18 @@ public class FraudDetectionProcessor implements Processor<String, Transaction, S
 
 //        System.out.println("Sending request: " + request);
         TransactionDecision result = externalService.sendTransactionToAnalysis(request);
-//        System.out.println("Received result: " + result);
+        System.out.println("Received result: " + result);
 
         if (result != null && result.isFraud()) {
             FraudAlert alert = new FraudAlert(
                     UUID.randomUUID().toString(),
                     userId,
+                    transaction.getTransactionId(),
                     transaction.getAmount(),
                     Instant.now(),
-                    "test location",
-                    new HashSet<>(state.getTransactions()
-                            .stream()
-                            .map(PreviousTransaction::getLocation)
-                            .collect(Collectors.toSet()))
-
+                    "test location"
             );
-
+            transaction.setFraud(true);
             context.forward(new Record<>(userId, alert, System.currentTimeMillis()));
             stateStore.put(userId, null);
         } else {
