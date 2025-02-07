@@ -11,7 +11,7 @@ load_dotenv()
 def send_transactions():
     url = os.getenv("BASE_URL") + "/api/transactions/send"
     while True:
-        transactions = generate_dataset(20)
+        transactions = generate_dataset(100)
         for transaction in transactions:
             response = requests.post(url, json=transaction)
             print(response.status_code, response.text)
