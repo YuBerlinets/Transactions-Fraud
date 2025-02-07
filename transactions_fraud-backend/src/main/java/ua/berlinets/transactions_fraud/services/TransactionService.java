@@ -51,7 +51,7 @@ public class TransactionService {
             if (stats == null) {
                 stats = new TimeWindowStats(windowStart);
             }
-            stats.incrementTotal();
+//            stats.incrementTotal();
             stats.incrementBlocked();
             stats.decrementApproved();
             return stats;

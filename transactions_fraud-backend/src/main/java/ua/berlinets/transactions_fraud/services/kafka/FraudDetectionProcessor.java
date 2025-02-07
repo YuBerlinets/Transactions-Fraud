@@ -97,7 +97,7 @@ public class FraudDetectionProcessor implements Processor<String, Transaction, S
                     userId,
                     transaction.getTransactionId(),
                     transaction.getAmount(),
-                    Instant.now(),
+                    transaction.getTimestamp(),
                     transaction.getLocation()
             );
             transaction.setFraud(true);
