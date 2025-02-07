@@ -1,3 +1,23 @@
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --card-bg: white;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --border-color: #ddd;
+  --amount-color: #28a745;
+  --graph-background: #fff;
+}
+
+.dark-theme {
+  --bg-color: #1e1e1e;
+  --text-color: #fff;
+  --card-bg: #2a2a2a;
+  --card-shadow: rgba(0, 0, 0, 0.5);
+  --border-color: #444;
+  --amount-color: #4caf50;
+  --graph-background: #2a2a2a;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +30,8 @@
   flex-direction: column;
   height: 100vh;
   padding: 16px;
-  background-color: #f5f5f5;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .graphs {
@@ -21,7 +42,7 @@
 }
 
 .graph {
-  background: white;
+  background: var(--graph-background);
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -36,7 +57,7 @@
 
 .list {
   flex: 1;
-  background: white;
+  background: var(--graph-background);
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -61,7 +82,7 @@ li {
 
 .transaction-id {
   font-weight: bold;
-  color: #333;
+  color: var(--text-color);
 }
 
 .time {
@@ -70,5 +91,5 @@ li {
 
 .amount {
   font-weight: bold;
-  color: #28a745;
+  color: var(--amount-color); 
 }
