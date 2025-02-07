@@ -7,18 +7,15 @@ from generator import generate_dataset
 
 load_dotenv()
 
-
 def send_transactions():
     url = os.getenv("BASE_URL") + "/api/transactions/send"
-
     while True:
         try:
-            # Check if the server is available before sending transactions
             response = requests.get(url, timeout=5)
-            if response.status_code != 200:
-                print(f"Server unavailable, skipping this batch. Status code: {response.status_code}")
-                time.sleep(60)
-                continue
+            # if response.status_code != 200:
+            #     print(f"Server unavailable, skipping this batch. Status code: {response.status_code}")
+            #     time.sleep(60)
+            #     continue
         except requests.exceptions.RequestException as e:
             print(f"Error reaching the server: {e}, skipping this batch...")
             time.sleep(60)
