@@ -1,0 +1,1802 @@
+[
+    {
+        "transactionId": "14502",
+        "userId": "user1",
+        "amount": 149.18736995376105,
+        "timestamp": "2025-01-27 22:49:05.182929",
+        "merchant": "Walmart",
+        "location": "Paris,USA",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user1",
+                "amount": 481.222854243382,
+                "timestamp": "2025-01-26 22:39:05.182929",
+                "merchant": "Amazon",
+                "location": "New York,Japan",
+                "type": "offline"
+            },
+            {
+                "userId": "user1",
+                "amount": 348.59586161644614,
+                "timestamp": "2025-01-28 22:39:05.182929",
+                "merchant": "McDonald's",
+                "location": "Paris,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user1",
+                "amount": 718.9139326728263,
+                "timestamp": "2025-01-27 22:39:05.182929",
+                "merchant": "Apple Store",
+                "location": "Vancouver,Canada",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "91247",
+        "userId": "user2",
+        "amount": 1228.844515699182,
+        "timestamp": "2025-02-04 22:47:05.182929",
+        "merchant": "Nike",
+        "location": "London,Japan",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user2",
+                "amount": 1376.7767922005519,
+                "timestamp": "2025-01-28 22:39:05.182929",
+                "merchant": "Apple Store",
+                "location": "Toronto,Canada",
+                "type": "offline"
+            },
+            {
+                "userId": "user2",
+                "amount": 970.1031049503332,
+                "timestamp": "2025-01-18 22:39:05.182929",
+                "merchant": "BestBuy",
+                "location": "Seoul,Japan",
+                "type": "offline"
+            },
+            {
+                "userId": "user2",
+                "amount": 122.86654122197474,
+                "timestamp": "2025-02-04 22:39:05.182929",
+                "merchant": "BestBuy",
+                "location": "Seoul,France",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "60416",
+        "userId": "user3",
+        "amount": 676.6915278700754,
+        "timestamp": "2025-01-30 22:47:05.182929",
+        "merchant": "Adidas",
+        "location": "Vancouver,Spain",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user3",
+                "amount": 961.0239386539575,
+                "timestamp": "2025-01-13 22:39:05.182929",
+                "merchant": "Walmart",
+                "location": "Miami,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user3",
+                "amount": 484.88329321773125,
+                "timestamp": "2025-01-08 22:39:05.182929",
+                "merchant": "Amazon",
+                "location": "New York,Spain",
+                "type": "online"
+            },
+            {
+                "userId": "user3",
+                "amount": 624.484809674656,
+                "timestamp": "2025-01-30 22:39:05.182929",
+                "merchant": "Starbucks",
+                "location": "Berlin,Spain",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "57925",
+        "userId": "user4",
+        "amount": 209.0022357258094,
+        "timestamp": "2025-01-09 22:46:05.182929",
+        "merchant": "Starbucks",
+        "location": "Vancouver,UK",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user4",
+                "amount": 326.96895195587314,
+                "timestamp": "2025-01-21 22:39:05.182929",
+                "merchant": "Apple Store",
+                "location": "Paris,South Korea",
+                "type": "offline"
+            },
+            {
+                "userId": "user4",
+                "amount": 96.35910501474984,
+                "timestamp": "2025-01-31 22:39:05.182929",
+                "merchant": "Nike",
+                "location": "Madrid,Germany",
+                "type": "online"
+            },
+            {
+                "userId": "user4",
+                "amount": 175.37862710560773,
+                "timestamp": "2025-01-09 22:39:05.182929",
+                "merchant": "Starbucks",
+                "location": "Los Angeles,USA",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 0
+    },
+    {
+        "transactionId": "15835",
+        "userId": "user5",
+        "amount": 723.8640162618557,
+        "timestamp": "2025-01-26 22:45:05.182929",
+        "merchant": "Nike",
+        "location": "London,Japan",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user5",
+                "amount": 268.36646891517756,
+                "timestamp": "2025-01-22 22:39:05.182929",
+                "merchant": "Adidas",
+                "location": "Berlin,Canada",
+                "type": "offline"
+            },
+            {
+                "userId": "user5",
+                "amount": 92.58474686744805,
+                "timestamp": "2025-01-23 22:39:05.182929",
+                "merchant": "Starbucks",
+                "location": "Vancouver,Canada",
+                "type": "offline"
+            },
+            {
+                "userId": "user5",
+                "amount": 945.989413287229,
+                "timestamp": "2025-01-26 22:39:05.182929",
+                "merchant": "Starbucks",
+                "location": "Vancouver,Japan",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "21881",
+        "userId": "user6",
+        "amount": 616.0020964629786,
+        "timestamp": "2025-01-24 22:42:05.182929",
+        "merchant": "Nike",
+        "location": "London,Japan",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user6",
+                "amount": 998.4458899216139,
+                "timestamp": "2025-01-14 22:39:05.182929",
+                "merchant": "Nike",
+                "location": "Madrid,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user6",
+                "amount": 217.46283630956066,
+                "timestamp": "2025-01-11 22:39:05.182929",
+                "merchant": "BestBuy",
+                "location": "London,Spain",
+                "type": "online"
+            },
+            {
+                "userId": "user6",
+                "amount": 1274.536291784007,
+                "timestamp": "2025-01-24 22:39:05.182929",
+                "merchant": "Nike",
+                "location": "Berlin,Japan",
+                "type": "online"
+            }
+        ],
+        "trueLabel": 0
+    },
+    {
+        "transactionId": "20235",
+        "userId": "user7",
+        "amount": 1327.6624375418457,
+        "timestamp": "2025-01-31 22:43:05.182929",
+        "merchant": "Adidas",
+        "location": "Chicago,Spain",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user7",
+                "amount": 179.83185248506985,
+                "timestamp": "2025-01-13 22:39:05.182929",
+                "merchant": "Apple Store",
+                "location": "Seoul,Germany",
+                "type": "offline"
+            },
+            {
+                "userId": "user7",
+                "amount": 58.43743617214808,
+                "timestamp": "2025-01-31 22:39:05.182929",
+                "merchant": "BestBuy",
+                "location": "Tokyo,South Korea",
+                "type": "offline"
+            },
+            {
+                "userId": "user7",
+                "amount": 262.62918229463116,
+                "timestamp": "2025-01-31 22:39:05.182929",
+                "merchant": "Apple Store",
+                "location": "Chicago,USA",
+                "type": "online"
+            }
+        ],
+        "trueLabel": 0
+    },
+    {
+        "transactionId": "17350",
+        "userId": "user8",
+        "amount": 28.512958442941144,
+        "timestamp": "2025-01-13 22:40:05.182929",
+        "merchant": "Amazon",
+        "location": "London,South Korea",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user8",
+                "amount": 29.623655308590454,
+                "timestamp": "2025-02-01 22:39:05.182929",
+                "merchant": "Starbucks",
+                "location": "Vancouver,Japan",
+                "type": "offline"
+            },
+            {
+                "userId": "user8",
+                "amount": 1332.3018073841395,
+                "timestamp": "2025-02-01 22:39:05.182929",
+                "merchant": "Starbucks",
+                "location": "Los Angeles,Japan",
+                "type": "offline"
+            },
+            {
+                "userId": "user8",
+                "amount": 633.5555738371081,
+                "timestamp": "2025-01-13 22:39:05.182929",
+                "merchant": "Nike",
+                "location": "Seoul,Japan",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "24218",
+        "userId": "user9",
+        "amount": 684.565398024145,
+        "timestamp": "2025-01-23 22:44:05.183936",
+        "merchant": "Adidas",
+        "location": "Seoul,USA",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user9",
+                "amount": 1089.5367596876047,
+                "timestamp": "2025-01-14 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Seoul,South Korea",
+                "type": "online"
+            },
+            {
+                "userId": "user9",
+                "amount": 512.1857190099757,
+                "timestamp": "2025-01-19 22:39:05.183936",
+                "merchant": "Nike",
+                "location": "Berlin,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user9",
+                "amount": 164.25325267195456,
+                "timestamp": "2025-01-23 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Tokyo,USA",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 0
+    },
+    {
+        "transactionId": "74712",
+        "userId": "user10",
+        "amount": 268.47523157874633,
+        "timestamp": "2025-01-20 22:40:05.183936",
+        "merchant": "McDonald's",
+        "location": "Paris,UK",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user10",
+                "amount": 1151.7228685497828,
+                "timestamp": "2025-01-30 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "London,USA",
+                "type": "online"
+            },
+            {
+                "userId": "user10",
+                "amount": 891.2827142228858,
+                "timestamp": "2025-01-16 22:39:05.183936",
+                "merchant": "Nike",
+                "location": "Los Angeles,UK",
+                "type": "offline"
+            },
+            {
+                "userId": "user10",
+                "amount": 755.5462098494385,
+                "timestamp": "2025-01-20 22:39:05.183936",
+                "merchant": "Nike",
+                "location": "Miami,Spain",
+                "type": "online"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "86846",
+        "userId": "user11",
+        "amount": 1112.470629439601,
+        "timestamp": "2025-01-24 22:47:05.183936",
+        "merchant": "Amazon",
+        "location": "London,UK",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user11",
+                "amount": 1367.1626789082966,
+                "timestamp": "2025-01-07 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Madrid,France",
+                "type": "offline"
+            },
+            {
+                "userId": "user11",
+                "amount": 59.62620789954437,
+                "timestamp": "2025-01-27 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Paris,South Korea",
+                "type": "offline"
+            },
+            {
+                "userId": "user11",
+                "amount": 1379.547817565704,
+                "timestamp": "2025-01-24 22:39:05.183936",
+                "merchant": "BestBuy",
+                "location": "Toronto,USA",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "59889",
+        "userId": "user12",
+        "amount": 908.9508192082385,
+        "timestamp": "2025-02-02 22:46:05.183936",
+        "merchant": "Amazon",
+        "location": "Paris,Japan",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user12",
+                "amount": 602.2158998096186,
+                "timestamp": "2025-01-21 22:39:05.183936",
+                "merchant": "BestBuy",
+                "location": "London,France",
+                "type": "online"
+            },
+            {
+                "userId": "user12",
+                "amount": 1371.0484813372323,
+                "timestamp": "2025-01-31 22:39:05.183936",
+                "merchant": "Amazon",
+                "location": "Vancouver,Canada",
+                "type": "offline"
+            },
+            {
+                "userId": "user12",
+                "amount": 494.4255088037269,
+                "timestamp": "2025-02-02 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Berlin,Spain",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 0
+    },
+    {
+        "transactionId": "89788",
+        "userId": "user13",
+        "amount": 588.0875943170693,
+        "timestamp": "2025-01-25 22:42:05.183936",
+        "merchant": "McDonald's",
+        "location": "Toronto,Canada",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user13",
+                "amount": 776.4169168111329,
+                "timestamp": "2025-01-11 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "Seoul,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user13",
+                "amount": 1355.9128557323602,
+                "timestamp": "2025-01-26 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Toronto,Canada",
+                "type": "offline"
+            },
+            {
+                "userId": "user13",
+                "amount": 279.5543647888442,
+                "timestamp": "2025-01-25 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "Chicago,Canada",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 0
+    },
+    {
+        "transactionId": "48536",
+        "userId": "user14",
+        "amount": 426.6586063560484,
+        "timestamp": "2025-01-28 22:49:05.183936",
+        "merchant": "Starbucks",
+        "location": "Vancouver,USA",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user14",
+                "amount": 1394.7027041970791,
+                "timestamp": "2025-01-07 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Madrid,France",
+                "type": "online"
+            },
+            {
+                "userId": "user14",
+                "amount": 573.2232189788602,
+                "timestamp": "2025-01-12 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Paris,South Korea",
+                "type": "online"
+            },
+            {
+                "userId": "user14",
+                "amount": 294.98573814293303,
+                "timestamp": "2025-01-28 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Vancouver,France",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 0
+    },
+    {
+        "transactionId": "97281",
+        "userId": "user15",
+        "amount": 849.9331793529001,
+        "timestamp": "2025-01-14 22:44:05.183936",
+        "merchant": "Amazon",
+        "location": "Seoul,South Korea",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user15",
+                "amount": 821.8717743840541,
+                "timestamp": "2025-01-22 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Toronto,South Korea",
+                "type": "offline"
+            },
+            {
+                "userId": "user15",
+                "amount": 218.33096621964575,
+                "timestamp": "2025-01-29 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Berlin,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user15",
+                "amount": 281.908665966629,
+                "timestamp": "2025-01-14 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Seoul,Japan",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "13696",
+        "userId": "user16",
+        "amount": 91.52608725679954,
+        "timestamp": "2025-01-23 22:43:05.183936",
+        "merchant": "Starbucks",
+        "location": "Miami,Germany",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user16",
+                "amount": 1019.3732154028063,
+                "timestamp": "2025-01-09 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Chicago,Spain",
+                "type": "offline"
+            },
+            {
+                "userId": "user16",
+                "amount": 413.2338195009685,
+                "timestamp": "2025-01-26 22:39:05.183936",
+                "merchant": "Amazon",
+                "location": "Tokyo,Canada",
+                "type": "offline"
+            },
+            {
+                "userId": "user16",
+                "amount": 51.03565644449482,
+                "timestamp": "2025-01-23 22:39:05.183936",
+                "merchant": "Nike",
+                "location": "Toronto,France",
+                "type": "online"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "69138",
+        "userId": "user17",
+        "amount": 237.31372143925805,
+        "timestamp": "2025-01-23 22:41:05.183936",
+        "merchant": "Adidas",
+        "location": "Toronto,Canada",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user17",
+                "amount": 361.76981582210215,
+                "timestamp": "2025-01-26 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Paris,Germany",
+                "type": "offline"
+            },
+            {
+                "userId": "user17",
+                "amount": 1122.4913974063118,
+                "timestamp": "2025-01-09 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Madrid,France",
+                "type": "offline"
+            },
+            {
+                "userId": "user17",
+                "amount": 261.41998563973993,
+                "timestamp": "2025-01-23 22:39:05.183936",
+                "merchant": "Nike",
+                "location": "Los Angeles,USA",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 0
+    },
+    {
+        "transactionId": "25621",
+        "userId": "user18",
+        "amount": 1011.4762773094006,
+        "timestamp": "2025-01-09 22:42:05.183936",
+        "merchant": "BestBuy",
+        "location": "Madrid,Japan",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user18",
+                "amount": 1237.441722808449,
+                "timestamp": "2025-01-24 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Miami,Canada",
+                "type": "offline"
+            },
+            {
+                "userId": "user18",
+                "amount": 420.78337741214494,
+                "timestamp": "2025-01-26 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Miami,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user18",
+                "amount": 619.022125563095,
+                "timestamp": "2025-01-09 22:39:05.183936",
+                "merchant": "BestBuy",
+                "location": "Tokyo,USA",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "27424",
+        "userId": "user19",
+        "amount": 444.2598859771668,
+        "timestamp": "2025-01-19 22:45:05.183936",
+        "merchant": "McDonald's",
+        "location": "Berlin,UK",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user19",
+                "amount": 406.4286652470969,
+                "timestamp": "2025-01-21 22:39:05.183936",
+                "merchant": "Amazon",
+                "location": "London,UK",
+                "type": "offline"
+            },
+            {
+                "userId": "user19",
+                "amount": 97.66211192314229,
+                "timestamp": "2025-01-08 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "New York,UK",
+                "type": "online"
+            },
+            {
+                "userId": "user19",
+                "amount": 447.43780486559876,
+                "timestamp": "2025-01-19 22:39:05.183936",
+                "merchant": "Nike",
+                "location": "Chicago,USA",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "17662",
+        "userId": "user20",
+        "amount": 942.711308186521,
+        "timestamp": "2025-01-30 22:41:05.183936",
+        "merchant": "Starbucks",
+        "location": "Paris,France",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user20",
+                "amount": 1346.046908647884,
+                "timestamp": "2025-01-17 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "London,France",
+                "type": "offline"
+            },
+            {
+                "userId": "user20",
+                "amount": 63.78431300563642,
+                "timestamp": "2025-02-01 22:39:05.183936",
+                "merchant": "BestBuy",
+                "location": "New York,Spain",
+                "type": "offline"
+            },
+            {
+                "userId": "user20",
+                "amount": 1184.1592459798787,
+                "timestamp": "2025-01-30 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "London,USA",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 0
+    },
+    {
+        "transactionId": "50889",
+        "userId": "user21",
+        "amount": 148.8700278537386,
+        "timestamp": "2025-01-29 22:48:05.183936",
+        "merchant": "Adidas",
+        "location": "New York,Canada",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user21",
+                "amount": 1061.1133270060427,
+                "timestamp": "2025-01-07 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Toronto,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user21",
+                "amount": 467.42445689256044,
+                "timestamp": "2025-01-26 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Chicago,France",
+                "type": "offline"
+            },
+            {
+                "userId": "user21",
+                "amount": 384.3053403670842,
+                "timestamp": "2025-01-29 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "Seoul,South Korea",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "68156",
+        "userId": "user22",
+        "amount": 875.7901913552981,
+        "timestamp": "2025-01-16 22:46:05.183936",
+        "merchant": "McDonald's",
+        "location": "Miami,USA",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user22",
+                "amount": 1053.042593637441,
+                "timestamp": "2025-01-27 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "New York,UK",
+                "type": "offline"
+            },
+            {
+                "userId": "user22",
+                "amount": 236.20073865644383,
+                "timestamp": "2025-01-19 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Los Angeles,Germany",
+                "type": "offline"
+            },
+            {
+                "userId": "user22",
+                "amount": 1357.2185147462717,
+                "timestamp": "2025-01-16 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Vancouver,Canada",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "15453",
+        "userId": "user23",
+        "amount": 1344.0895561932534,
+        "timestamp": "2025-01-31 22:43:05.183936",
+        "merchant": "BestBuy",
+        "location": "Berlin,Japan",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user23",
+                "amount": 71.57464810672346,
+                "timestamp": "2025-01-21 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Berlin,UK",
+                "type": "offline"
+            },
+            {
+                "userId": "user23",
+                "amount": 823.4932450449372,
+                "timestamp": "2025-01-15 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Seoul,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user23",
+                "amount": 41.80455724482759,
+                "timestamp": "2025-01-31 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Miami,France",
+                "type": "online"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "91367",
+        "userId": "user24",
+        "amount": 272.0507233272095,
+        "timestamp": "2025-01-27 22:49:05.183936",
+        "merchant": "Apple Store",
+        "location": "Tokyo,Spain",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user24",
+                "amount": 451.04951926231973,
+                "timestamp": "2025-02-05 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Tokyo,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user24",
+                "amount": 1140.3661299637233,
+                "timestamp": "2025-01-10 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Seoul,Canada",
+                "type": "offline"
+            },
+            {
+                "userId": "user24",
+                "amount": 845.9406209616449,
+                "timestamp": "2025-01-27 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Chicago,Germany",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 0
+    },
+    {
+        "transactionId": "63782",
+        "userId": "user25",
+        "amount": 689.4015433655009,
+        "timestamp": "2025-01-13 22:43:05.183936",
+        "merchant": "McDonald's",
+        "location": "Tokyo,USA",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user25",
+                "amount": 305.88363024579274,
+                "timestamp": "2025-01-15 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Madrid,USA",
+                "type": "online"
+            },
+            {
+                "userId": "user25",
+                "amount": 538.2312287423306,
+                "timestamp": "2025-01-07 22:39:05.183936",
+                "merchant": "Amazon",
+                "location": "Miami,USA",
+                "type": "online"
+            },
+            {
+                "userId": "user25",
+                "amount": 399.60775486253425,
+                "timestamp": "2025-01-13 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Chicago,Canada",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "50146",
+        "userId": "user26",
+        "amount": 703.8248998047908,
+        "timestamp": "2025-01-15 22:40:05.183936",
+        "merchant": "Walmart",
+        "location": "Paris,France",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user26",
+                "amount": 526.9611678641384,
+                "timestamp": "2025-02-04 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Tokyo,France",
+                "type": "offline"
+            },
+            {
+                "userId": "user26",
+                "amount": 1087.9180744165508,
+                "timestamp": "2025-01-29 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "Berlin,South Korea",
+                "type": "offline"
+            },
+            {
+                "userId": "user26",
+                "amount": 349.7988550195591,
+                "timestamp": "2025-01-15 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "Chicago,France",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "20993",
+        "userId": "user27",
+        "amount": 949.5083131076376,
+        "timestamp": "2025-01-16 22:44:05.183936",
+        "merchant": "BestBuy",
+        "location": "Paris,Canada",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user27",
+                "amount": 332.1927121597553,
+                "timestamp": "2025-01-08 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Miami,Germany",
+                "type": "offline"
+            },
+            {
+                "userId": "user27",
+                "amount": 1351.7283322547596,
+                "timestamp": "2025-02-04 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Toronto,UK",
+                "type": "offline"
+            },
+            {
+                "userId": "user27",
+                "amount": 206.68223261383454,
+                "timestamp": "2025-01-16 22:39:05.183936",
+                "merchant": "BestBuy",
+                "location": "Chicago,USA",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "95333",
+        "userId": "user28",
+        "amount": 518.6473799485541,
+        "timestamp": "2025-02-04 22:40:05.183936",
+        "merchant": "Walmart",
+        "location": "New York,South Korea",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user28",
+                "amount": 945.6466574408815,
+                "timestamp": "2025-02-03 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Berlin,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user28",
+                "amount": 312.9342530702,
+                "timestamp": "2025-01-23 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Miami,UK",
+                "type": "offline"
+            },
+            {
+                "userId": "user28",
+                "amount": 408.2905785082623,
+                "timestamp": "2025-02-04 22:39:05.183936",
+                "merchant": "BestBuy",
+                "location": "Vancouver,Spain",
+                "type": "online"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "88519",
+        "userId": "user29",
+        "amount": 700.2450704560733,
+        "timestamp": "2025-02-05 22:41:05.183936",
+        "merchant": "Adidas",
+        "location": "New York,South Korea",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user29",
+                "amount": 196.1658457391683,
+                "timestamp": "2025-01-15 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Berlin,Canada",
+                "type": "offline"
+            },
+            {
+                "userId": "user29",
+                "amount": 1383.2883177911187,
+                "timestamp": "2025-02-03 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Toronto,Canada",
+                "type": "offline"
+            },
+            {
+                "userId": "user29",
+                "amount": 333.4013979800647,
+                "timestamp": "2025-02-05 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Vancouver,Canada",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "65696",
+        "userId": "user30",
+        "amount": 568.5960544883936,
+        "timestamp": "2025-01-29 22:44:05.183936",
+        "merchant": "Adidas",
+        "location": "Berlin,Canada",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user30",
+                "amount": 1367.4511478256118,
+                "timestamp": "2025-01-20 22:39:05.183936",
+                "merchant": "Amazon",
+                "location": "Toronto,Japan",
+                "type": "offline"
+            },
+            {
+                "userId": "user30",
+                "amount": 127.95322374879484,
+                "timestamp": "2025-01-18 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "New York,Japan",
+                "type": "offline"
+            },
+            {
+                "userId": "user30",
+                "amount": 843.2812312406635,
+                "timestamp": "2025-01-29 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Seoul,France",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "20552",
+        "userId": "user31",
+        "amount": 848.3153190658654,
+        "timestamp": "2025-01-28 22:41:05.183936",
+        "merchant": "Starbucks",
+        "location": "Los Angeles,Japan",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user31",
+                "amount": 1059.8711960639857,
+                "timestamp": "2025-01-28 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Seoul,Germany",
+                "type": "offline"
+            },
+            {
+                "userId": "user31",
+                "amount": 233.70876265505314,
+                "timestamp": "2025-02-03 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "Tokyo,USA",
+                "type": "online"
+            },
+            {
+                "userId": "user31",
+                "amount": 856.4094262361309,
+                "timestamp": "2025-01-28 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Miami,USA",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "96198",
+        "userId": "user32",
+        "amount": 1147.4341032116477,
+        "timestamp": "2025-01-20 22:42:05.183936",
+        "merchant": "Nike",
+        "location": "Los Angeles,Canada",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user32",
+                "amount": 1171.6371242493524,
+                "timestamp": "2025-01-11 22:39:05.183936",
+                "merchant": "Amazon",
+                "location": "Seoul,UK",
+                "type": "offline"
+            },
+            {
+                "userId": "user32",
+                "amount": 1008.0932906445623,
+                "timestamp": "2025-01-10 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Berlin,USA",
+                "type": "online"
+            },
+            {
+                "userId": "user32",
+                "amount": 401.0973711490486,
+                "timestamp": "2025-01-20 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Paris,Germany",
+                "type": "online"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "39964",
+        "userId": "user33",
+        "amount": 16.26745856506872,
+        "timestamp": "2025-01-27 22:46:05.183936",
+        "merchant": "Walmart",
+        "location": "Seoul,Germany",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user33",
+                "amount": 455.48812141995944,
+                "timestamp": "2025-01-17 22:39:05.183936",
+                "merchant": "Nike",
+                "location": "Tokyo,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user33",
+                "amount": 1358.3178102763839,
+                "timestamp": "2025-01-17 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Los Angeles,Canada",
+                "type": "online"
+            },
+            {
+                "userId": "user33",
+                "amount": 944.4775773528968,
+                "timestamp": "2025-01-27 22:39:05.183936",
+                "merchant": "Nike",
+                "location": "Berlin,Canada",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "56919",
+        "userId": "user34",
+        "amount": 813.2207607052821,
+        "timestamp": "2025-01-09 22:49:05.183936",
+        "merchant": "Apple Store",
+        "location": "Los Angeles,Japan",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user34",
+                "amount": 803.0533319810984,
+                "timestamp": "2025-02-05 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Seoul,South Korea",
+                "type": "offline"
+            },
+            {
+                "userId": "user34",
+                "amount": 756.4629461468959,
+                "timestamp": "2025-01-26 22:39:05.183936",
+                "merchant": "Nike",
+                "location": "Toronto,Canada",
+                "type": "offline"
+            },
+            {
+                "userId": "user34",
+                "amount": 407.59733713837716,
+                "timestamp": "2025-01-09 22:39:05.183936",
+                "merchant": "Nike",
+                "location": "Miami,Canada",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "93992",
+        "userId": "user35",
+        "amount": 1330.1709627090354,
+        "timestamp": "2025-01-19 22:40:05.183936",
+        "merchant": "McDonald's",
+        "location": "Toronto,Germany",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user35",
+                "amount": 870.0737066859051,
+                "timestamp": "2025-01-18 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Madrid,South Korea",
+                "type": "online"
+            },
+            {
+                "userId": "user35",
+                "amount": 583.865205414996,
+                "timestamp": "2025-01-28 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Miami,Canada",
+                "type": "offline"
+            },
+            {
+                "userId": "user35",
+                "amount": 307.3789244795891,
+                "timestamp": "2025-01-19 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Toronto,Japan",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "32045",
+        "userId": "user36",
+        "amount": 1045.766325445886,
+        "timestamp": "2025-01-21 22:47:05.183936",
+        "merchant": "Apple Store",
+        "location": "Chicago,UK",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user36",
+                "amount": 790.4019265503517,
+                "timestamp": "2025-02-05 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "Madrid,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user36",
+                "amount": 49.958172153304176,
+                "timestamp": "2025-01-20 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "Chicago,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user36",
+                "amount": 278.81834009349785,
+                "timestamp": "2025-01-21 22:39:05.183936",
+                "merchant": "Amazon",
+                "location": "Miami,USA",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "88850",
+        "userId": "user37",
+        "amount": 1189.9522258468428,
+        "timestamp": "2025-01-21 22:48:05.183936",
+        "merchant": "McDonald's",
+        "location": "Chicago,USA",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user37",
+                "amount": 257.98719736587714,
+                "timestamp": "2025-01-30 22:39:05.183936",
+                "merchant": "Amazon",
+                "location": "Tokyo,USA",
+                "type": "online"
+            },
+            {
+                "userId": "user37",
+                "amount": 1326.3764883479457,
+                "timestamp": "2025-02-02 22:39:05.183936",
+                "merchant": "Nike",
+                "location": "New York,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user37",
+                "amount": 1301.0183436217383,
+                "timestamp": "2025-01-21 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "New York,UK",
+                "type": "online"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "22992",
+        "userId": "user38",
+        "amount": 522.0160370951838,
+        "timestamp": "2025-02-01 22:41:05.183936",
+        "merchant": "McDonald's",
+        "location": "Los Angeles,USA",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user38",
+                "amount": 1316.94172258393,
+                "timestamp": "2025-01-16 22:39:05.183936",
+                "merchant": "BestBuy",
+                "location": "Paris,France",
+                "type": "offline"
+            },
+            {
+                "userId": "user38",
+                "amount": 762.1534711681414,
+                "timestamp": "2025-01-25 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "London,USA",
+                "type": "online"
+            },
+            {
+                "userId": "user38",
+                "amount": 936.1542501961816,
+                "timestamp": "2025-02-01 22:39:05.183936",
+                "merchant": "Nike",
+                "location": "Seoul,USA",
+                "type": "online"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "26656",
+        "userId": "user39",
+        "amount": 292.44545203619896,
+        "timestamp": "2025-02-02 22:48:05.183936",
+        "merchant": "Adidas",
+        "location": "London,USA",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user39",
+                "amount": 916.0203950044139,
+                "timestamp": "2025-01-31 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Tokyo,South Korea",
+                "type": "online"
+            },
+            {
+                "userId": "user39",
+                "amount": 1388.2591480357323,
+                "timestamp": "2025-01-19 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Los Angeles,Japan",
+                "type": "offline"
+            },
+            {
+                "userId": "user39",
+                "amount": 624.3304257718956,
+                "timestamp": "2025-02-02 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "Miami,Canada",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "55950",
+        "userId": "user40",
+        "amount": 1358.2391253474907,
+        "timestamp": "2025-01-08 22:44:05.183936",
+        "merchant": "Nike",
+        "location": "London,Canada",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user40",
+                "amount": 335.2740948848196,
+                "timestamp": "2025-01-30 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Seoul,Spain",
+                "type": "offline"
+            },
+            {
+                "userId": "user40",
+                "amount": 348.7720349508013,
+                "timestamp": "2025-02-05 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "Miami,Spain",
+                "type": "offline"
+            },
+            {
+                "userId": "user40",
+                "amount": 243.099872228991,
+                "timestamp": "2025-01-08 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Vancouver,France",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 0
+    },
+    {
+        "transactionId": "20771",
+        "userId": "user41",
+        "amount": 388.7444909971142,
+        "timestamp": "2025-01-15 22:46:05.183936",
+        "merchant": "McDonald's",
+        "location": "Chicago,Canada",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user41",
+                "amount": 1082.7648026015868,
+                "timestamp": "2025-01-30 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Berlin,USA",
+                "type": "online"
+            },
+            {
+                "userId": "user41",
+                "amount": 1261.540437640667,
+                "timestamp": "2025-02-04 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Madrid,Canada",
+                "type": "offline"
+            },
+            {
+                "userId": "user41",
+                "amount": 575.9080821721926,
+                "timestamp": "2025-01-15 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "New York,UK",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "41307",
+        "userId": "user42",
+        "amount": 92.97639183524132,
+        "timestamp": "2025-01-24 22:48:05.183936",
+        "merchant": "Walmart",
+        "location": "Madrid,Canada",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user42",
+                "amount": 365.4832985289818,
+                "timestamp": "2025-01-24 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "Berlin,Japan",
+                "type": "online"
+            },
+            {
+                "userId": "user42",
+                "amount": 1001.2185504853632,
+                "timestamp": "2025-02-05 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "London,Spain",
+                "type": "offline"
+            },
+            {
+                "userId": "user42",
+                "amount": 306.00518572862285,
+                "timestamp": "2025-01-24 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Toronto,South Korea",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "97531",
+        "userId": "user43",
+        "amount": 247.65048678032068,
+        "timestamp": "2025-01-15 22:41:05.183936",
+        "merchant": "Starbucks",
+        "location": "Berlin,Spain",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user43",
+                "amount": 369.14749196466926,
+                "timestamp": "2025-02-01 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Los Angeles,Spain",
+                "type": "online"
+            },
+            {
+                "userId": "user43",
+                "amount": 290.38367880912114,
+                "timestamp": "2025-01-26 22:39:05.183936",
+                "merchant": "Adidas",
+                "location": "New York,Spain",
+                "type": "online"
+            },
+            {
+                "userId": "user43",
+                "amount": 274.31142614976517,
+                "timestamp": "2025-01-15 22:39:05.183936",
+                "merchant": "Nike",
+                "location": "London,Japan",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "18871",
+        "userId": "user44",
+        "amount": 1199.8366172505637,
+        "timestamp": "2025-02-04 22:48:05.183936",
+        "merchant": "Nike",
+        "location": "Tokyo,USA",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user44",
+                "amount": 601.8222412730399,
+                "timestamp": "2025-01-14 22:39:05.183936",
+                "merchant": "Walmart",
+                "location": "Seoul,France",
+                "type": "offline"
+            },
+            {
+                "userId": "user44",
+                "amount": 346.3493493839675,
+                "timestamp": "2025-01-22 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Los Angeles,USA",
+                "type": "online"
+            },
+            {
+                "userId": "user44",
+                "amount": 352.4161320030672,
+                "timestamp": "2025-02-04 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Paris,USA",
+                "type": "online"
+            }
+        ],
+        "trueLabel": 0
+    },
+    {
+        "transactionId": "48956",
+        "userId": "user45",
+        "amount": 588.5418913690166,
+        "timestamp": "2025-01-30 22:47:05.183936",
+        "merchant": "Adidas",
+        "location": "Tokyo,UK",
+        "type": "online",
+        "previousTransactions": [
+            {
+                "userId": "user45",
+                "amount": 1003.3534511814526,
+                "timestamp": "2025-02-05 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Tokyo,UK",
+                "type": "online"
+            },
+            {
+                "userId": "user45",
+                "amount": 781.522529388287,
+                "timestamp": "2025-01-14 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Vancouver,Canada",
+                "type": "online"
+            },
+            {
+                "userId": "user45",
+                "amount": 976.1051801330988,
+                "timestamp": "2025-01-30 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Madrid,USA",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 0
+    },
+    {
+        "transactionId": "44748",
+        "userId": "user46",
+        "amount": 875.1032882556656,
+        "timestamp": "2025-02-01 22:48:05.183936",
+        "merchant": "Walmart",
+        "location": "Los Angeles,Canada",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user46",
+                "amount": 504.42938695227974,
+                "timestamp": "2025-02-04 22:39:05.183936",
+                "merchant": "BestBuy",
+                "location": "Toronto,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user46",
+                "amount": 631.8037164787315,
+                "timestamp": "2025-01-07 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Paris,Japan",
+                "type": "offline"
+            },
+            {
+                "userId": "user46",
+                "amount": 230.00867784961525,
+                "timestamp": "2025-02-01 22:39:05.183936",
+                "merchant": "BestBuy",
+                "location": "Berlin,USA",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "68754",
+        "userId": "user47",
+        "amount": 301.18737491706673,
+        "timestamp": "2025-01-28 22:43:05.183936",
+        "merchant": "Apple Store",
+        "location": "Paris,Spain",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user47",
+                "amount": 452.16653835241914,
+                "timestamp": "2025-02-02 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Madrid,Canada",
+                "type": "online"
+            },
+            {
+                "userId": "user47",
+                "amount": 214.866697827256,
+                "timestamp": "2025-01-18 22:39:05.183936",
+                "merchant": "Amazon",
+                "location": "Berlin,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user47",
+                "amount": 1110.4454865497937,
+                "timestamp": "2025-01-28 22:39:05.183936",
+                "merchant": "BestBuy",
+                "location": "Paris,UK",
+                "type": "offline"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "37831",
+        "userId": "user48",
+        "amount": 1230.0961242675096,
+        "timestamp": "2025-01-14 22:46:05.183936",
+        "merchant": "Amazon",
+        "location": "Vancouver,France",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user48",
+                "amount": 1391.6659060987843,
+                "timestamp": "2025-01-12 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Toronto,South Korea",
+                "type": "offline"
+            },
+            {
+                "userId": "user48",
+                "amount": 922.2151628406518,
+                "timestamp": "2025-01-26 22:39:05.183936",
+                "merchant": "BestBuy",
+                "location": "Seoul,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user48",
+                "amount": 115.7044933643491,
+                "timestamp": "2025-01-14 22:39:05.183936",
+                "merchant": "McDonald's",
+                "location": "Toronto,USA",
+                "type": "online"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "56320",
+        "userId": "user49",
+        "amount": 449.1407538372156,
+        "timestamp": "2025-01-29 22:47:05.183936",
+        "merchant": "McDonald's",
+        "location": "Tokyo,USA",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user49",
+                "amount": 342.7819291134438,
+                "timestamp": "2025-01-28 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Chicago,USA",
+                "type": "online"
+            },
+            {
+                "userId": "user49",
+                "amount": 117.67707761026901,
+                "timestamp": "2025-01-09 22:39:05.183936",
+                "merchant": "BestBuy",
+                "location": "Berlin,Spain",
+                "type": "offline"
+            },
+            {
+                "userId": "user49",
+                "amount": 859.448027695232,
+                "timestamp": "2025-01-29 22:39:05.183936",
+                "merchant": "Apple Store",
+                "location": "Tokyo,Spain",
+                "type": "online"
+            }
+        ],
+        "trueLabel": 1
+    },
+    {
+        "transactionId": "77977",
+        "userId": "user50",
+        "amount": 235.96658965432303,
+        "timestamp": "2025-01-16 22:43:05.183936",
+        "merchant": "Amazon",
+        "location": "Paris,Germany",
+        "type": "offline",
+        "previousTransactions": [
+            {
+                "userId": "user50",
+                "amount": 1019.5768117644765,
+                "timestamp": "2025-01-20 22:39:05.183936",
+                "merchant": "Starbucks",
+                "location": "Seoul,USA",
+                "type": "offline"
+            },
+            {
+                "userId": "user50",
+                "amount": 1051.0757379175207,
+                "timestamp": "2025-01-27 22:39:05.183936",
+                "merchant": "BestBuy",
+                "location": "Berlin,France",
+                "type": "offline"
+            },
+            {
+                "userId": "user50",
+                "amount": 457.98187966450485,
+                "timestamp": "2025-01-16 22:39:05.183936",
+                "merchant": "Amazon",
+                "location": "London,South Korea",
+                "type": "online"
+            }
+        ],
+        "trueLabel": 1
+    }
+]

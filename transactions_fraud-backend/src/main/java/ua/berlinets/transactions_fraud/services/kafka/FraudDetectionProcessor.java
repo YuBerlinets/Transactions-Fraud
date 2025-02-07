@@ -87,7 +87,7 @@ public class FraudDetectionProcessor implements Processor<String, Transaction, S
 
         request.setPreviousTransactions(previousTransactions);
 
-//        System.out.println("Sending request: " + request);
+        System.out.println("Sending request: " + request);
         TransactionDecision result = externalService.sendTransactionToAnalysis(request);
         System.out.println("Received result: " + result);
 
@@ -98,7 +98,7 @@ public class FraudDetectionProcessor implements Processor<String, Transaction, S
                     transaction.getTransactionId(),
                     transaction.getAmount(),
                     Instant.now(),
-                    "test location"
+                    transaction.getLocation()
             );
             transaction.setFraud(true);
             context.forward(new Record<>(userId, alert, System.currentTimeMillis()));

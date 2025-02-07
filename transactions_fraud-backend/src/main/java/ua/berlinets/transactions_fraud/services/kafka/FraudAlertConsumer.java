@@ -31,7 +31,7 @@ public class FraudAlertConsumer {
         try {
             log.info("Received fraud alert: {}", alert);
             transactionService.recordFraudAlert(alert);
-            fraudAlertRepository.save(alert);
+//            fraudAlertRepository.save(alert);
         } catch (Exception e) {
             log.error("Error processing fraud alert: {}", alert, e);
         }
