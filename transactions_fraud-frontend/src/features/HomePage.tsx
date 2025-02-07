@@ -58,6 +58,7 @@ interface GraphProps {
 interface ListProps {
     title: string;
     data: Transaction[] | FraudAlert[];
+    isFraud?: boolean;
 }
 
 export default function HomePage() {
@@ -79,8 +80,12 @@ export default function HomePage() {
                         time: new Date(stat.windowStart).toLocaleTimeString()
                     }));
                     setTimeWindowStats(formattedStats);
-                    setLastTransactions(data.lastTransactions);
-                    setFraudAlerts(data.lastFraudAlerts);
+                    setLastTransactions(data.lastTransactions.sort((a, b) => {
+                        return new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime();
+                    }));
+                    setFraudAlerts(data.lastFraudAlerts.sort((a, b) => {
+                        return new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime();
+                    }));
                 });
             },
         });
@@ -94,8 +99,13 @@ export default function HomePage() {
 
     return (
         <div className="container">
-            <h1>Real-time Transaction Monitoring</h1>
-            <ThemeToggle />
+            <div className="actions">
+                <h1>Real-time Transaction Monitoring</h1>
+                <div>
+                    <span>Theme</span>
+                    <ThemeToggle />
+                </div>
+            </div>
             <div className="graphs">
                 <Graph
                     title="Transactions per 3 min"
@@ -118,13 +128,25 @@ export default function HomePage() {
             </div>
             <div className="lists">
                 <List title="Last Transactions" data={lastTransactions} />
-                <List title="Fraud Alerts" data={fraudAlerts} />
+                <List title="Fraud Alerts" data={fraudAlerts} isFraud={true} />
             </div>
         </div>
     );
 }
 
 function Graph({ title, data, dataKey, color }: GraphProps) {
+    const GraphTooltip = ({ active, payload, label }: any) => {
+        if (active && payload && payload.length) {
+            return (
+                <div className="graph_tooltip">
+                    <p className="label">{`Time: ${label}`}</p>
+                    <p className="value">{`${dataKey}: ${payload[0].value}`}</p>
+                </div>
+            );
+        }
+        return null;
+    };
+
     return (
         <div className="graph">
             <h2>{title}</h2>
@@ -133,7 +155,7 @@ function Graph({ title, data, dataKey, color }: GraphProps) {
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="time" />
                     <YAxis />
-                    <Tooltip />
+                    <Tooltip content={<GraphTooltip />} />
                     <Line type="monotone" dataKey={dataKey} stroke={color} strokeWidth={2} />
                 </LineChart>
             </ResponsiveContainer>
@@ -141,25 +163,33 @@ function Graph({ title, data, dataKey, color }: GraphProps) {
     );
 }
 
-function List({ title, data }: ListProps) {
+function List({ title, data, isFraud }: ListProps) {
     const formatTime = (timestamp: string) =>
         new Date(timestamp).toLocaleTimeString();
 
     return (
         <div className="list">
             <h2>{title}</h2>
-            <ul>
-                {data.map((item, idx) => (
-                    <li key={idx}>
-                        <span className="id">{item.transactionId}</span>
-                        <span className="user">User: {item.userId}</span>
-                        <span className="time">{formatTime(item.timestamp)}</span>
-                        <span className="amount">
-                            ${Number.parseFloat(item.amount).toFixed(2)}
-                        </span>
-                    </li>
-                ))}
-            </ul>
+            <div className="list-container">
+                <div className="header">
+                    <span>TRX ID</span>
+                    <span>User ID</span>
+                    <span>Time</span>
+                    <span>Amount</span>
+                </div>
+                <ul>
+                    {data.map((item, idx) => (
+                        <li key={idx} className="row">
+                            <span>{item.transactionId}</span>
+                            <span>{item.userId}</span>
+                            <span className="time">{formatTime(item.timestamp)}</span>
+                            <span className={`amount ${isFraud ? "fraud" : ""}`}>
+                                ${Number.parseFloat(item.amount).toFixed(2)}
+                            </span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 }

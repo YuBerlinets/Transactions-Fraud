@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -12,7 +13,11 @@ const ThemeToggle = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
-  return <button onClick={toggleTheme}>Switch to {theme === "light" ? "Dark" : "Light"} Mode</button>;
+  return (
+    <button onClick={toggleTheme} className={`theme-toggle ${theme}`}>
+      {theme === "light" ? <FaMoon /> : <FaSun />} 
+    </button>
+  );
 };
 
 export default ThemeToggle;
