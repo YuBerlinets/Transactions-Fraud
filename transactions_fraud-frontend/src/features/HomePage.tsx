@@ -14,6 +14,7 @@ import {
 import "../assets/style/index.css";
 import ThemeToggle from "./components/ThemeToggle";
 import { useNavigate } from "react-router-dom";
+import { baseURL } from "../app/api/apiConfig";
 
 interface Transaction {
     transactionId: string;
@@ -70,7 +71,7 @@ export default function HomePage() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        const socket = new SockJS("http://localhost:8080/ws-statistics");
+        const socket = new SockJS(`${baseURL}/ws-statistics`);
         const stompClient = new Client({
             webSocketFactory: () => socket,
             reconnectDelay: 5000,
