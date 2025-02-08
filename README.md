@@ -19,6 +19,7 @@ This project is a real-time fraud detection system for banking transactions. It 
   
 ### Frontend (React + TypeScript)
 - Real-time dashboard displaying: Transactions per 3 minutes, Blocked Transactions, Approved Transactions, Fraud Alerts
+- HTTP server configured using Nginx
 
 ### Transactions Streaming (Kafka)
 - Has two topics with events (fraud-alerts, transactions)
@@ -30,7 +31,7 @@ This project is a real-time fraud detection system for banking transactions. It 
 ## Tech Stack
 - **Backend**: Java, Spring Boot, Kafka Streams, MongoDB, FastAPI, WEBSocket
 - **Machine Learning**: Python, Scikit-learn
-- **Frontend**: React, TypeScript, Vite, SockJS
+- **Frontend**: React, TypeScript, Vite, SockJS, Nginx
 - **Event Streaming**: Apache Kafka
 
 ## Client Layout
