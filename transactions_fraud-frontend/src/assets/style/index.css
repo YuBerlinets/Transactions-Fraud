@@ -176,3 +176,53 @@ h2 {
   border: 1px solid var(--border-color);
   border-radius: 8px;
 }
+
+.fraud_alerts_actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.alerts_upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 10px 10px;
+}
+
+.alerts_upper h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.fraud_table {
+  margin-top: 20px;
+}
+
+.return_button_icon {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.alerts_upper_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fraud_alerts_link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.fraud_alerts_link:hover {
+  color: var(--primary-color);
+}
+
+.actions_right_side {
+  display: flex;
+  gap: 10px;
+}

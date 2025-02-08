@@ -1,21 +1,18 @@
-import { useEffect, useState } from "react";
+
+import { useContext } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
+import { ThemeContext } from "../../app/context/ThemeContex";
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
-
-  useEffect(() => {
-    document.body.classList.toggle("dark-theme", theme === "dark");
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+  const { theme, setTheme } = useContext(ThemeContext);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   return (
     <button onClick={toggleTheme} className={`theme-toggle ${theme}`}>
-      {theme === "light" ? <FaMoon /> : <FaSun />} 
+      {theme === "light" ? <FaMoon /> : <FaSun />}
     </button>
   );
 };

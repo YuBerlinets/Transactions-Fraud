@@ -11,6 +11,7 @@ import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
 import ua.berlinets.transactions_fraud.entities.mongo.FraudAlert;
 import ua.berlinets.transactions_fraud.repositories.FraudAlertRepository;
+import ua.berlinets.transactions_fraud.services.FraudAlertService;
 import ua.berlinets.transactions_fraud.services.TransactionService;
 
 @Service
@@ -19,7 +20,7 @@ import ua.berlinets.transactions_fraud.services.TransactionService;
 @EnableKafkaStreams
 @EnableKafka
 public class FraudAlertConsumer {
-    private final FraudAlertRepository fraudAlertRepository;
+    private final FraudAlertService fraudAlertService;
     private final TransactionService transactionService;
 
     @KafkaListener(
@@ -31,7 +32,7 @@ public class FraudAlertConsumer {
         try {
             log.info("Received fraud alert: {}", alert);
             transactionService.recordFraudAlert(alert);
-//            fraudAlertRepository.save(alert);
+            fraudAlertService.saveFraudAlert(alert);
         } catch (Exception e) {
             log.error("Error processing fraud alert: {}", alert, e);
         }

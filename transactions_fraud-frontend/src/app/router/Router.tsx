@@ -1,6 +1,7 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import App from "../layout/App";
 import HomePage from "../../features/HomePage";
+import FraudAlertsPage from "../../features/FraudAlertsPage";
 
 
 const router = createBrowserRouter([
@@ -12,12 +13,17 @@ const router = createBrowserRouter([
                 path: '/',
                 element: <HomePage />
             },
+            {
+                path: '/fraud-alerts',
+                element: <FraudAlertsPage />
+            }
         ],
+
     },
 
     {
         path: '*',
-        element: <div>404</div>,
+        element: <Navigate to="/" replace />,
     },
 ]);
 

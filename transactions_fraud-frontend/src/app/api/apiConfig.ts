@@ -9,9 +9,7 @@ const apiInstance: AxiosInstance = axios.create({
 
 const api = {
     fraudAlerts: {
-        
-        getAll: () => apiInstance.get('/api/alerts'),
-       
+        getAllPagination: (page: number, size: number, sort: string) => apiInstance.get('/api/fraud-alerts', { params: { page, size, sort } }),
     },
     transactions: {
 

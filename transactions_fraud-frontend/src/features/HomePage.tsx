@@ -13,6 +13,7 @@ import {
 
 import "../assets/style/index.css";
 import ThemeToggle from "./components/ThemeToggle";
+import { useNavigate } from "react-router-dom";
 
 interface Transaction {
     transactionId: string;
@@ -66,6 +67,8 @@ export default function HomePage() {
     const [lastTransactions, setLastTransactions] = useState<Transaction[]>([]);
     const [fraudAlerts, setFraudAlerts] = useState<FraudAlert[]>([]);
 
+    const navigate = useNavigate();
+
     useEffect(() => {
         const socket = new SockJS("http://localhost:8080/ws-statistics");
         const stompClient = new Client({
@@ -101,7 +104,13 @@ export default function HomePage() {
         <div className="container">
             <div className="actions">
                 <h1>Real-time Transaction Monitoring</h1>
-                <div>
+                <div className="actions_right_side">
+                    <a
+                        onClick={() => navigate("/fraud-alerts")}
+                        className="fraud_alerts_link"
+                    >
+                        Fraud Alerts
+                    </a>
                     <span>Theme</span>
                     <ThemeToggle />
                 </div>
